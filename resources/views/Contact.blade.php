@@ -256,13 +256,13 @@
 <body>
     <header class="header">
         <div class="header-left">
-            <img src="sources/ccslogo.png" alt="CCS Logo" class="header-logo">
+            <img src="{{ asset('resources1/ccslogo.png') }}" alt="CCS Logo" class="header-logo">
             <a href="#" class="header-title">CSPC - College of Computer Studies</a>
         </div>
         <nav class="header-nav">
             <ul>
-                <li ><a href="">Home</a></li>
-                <li ><a href="#">About</a></li>
+                <li ><a href="/home">Home</a></li>
+                <li ><a href="/about">About</a></li>
                 <li id = "main"><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -309,7 +309,7 @@
         </div>
 
         <div class="map-container">
-            <img src="sources/ccsbg.jpg" alt="Map of Camarines Sur Polytechnic Colleges" class="location-map-image">
+            <img src="{{ asset('resources1/ccsbg.jpg') }}" alt="Map of Camarines Sur Polytechnic Colleges" class="location-map-image">
         </div>
     </section>
 
