@@ -30,10 +30,11 @@
         }
 
         .header-logo {
-            height: 40px;
-            width: 40px;
+            height: 50px;
+            width: 50px;
             border-radius: 50%;
             object-fit: cover;
+            margin-top: -10px;
         }
 
         .header-title {
@@ -60,8 +61,15 @@
         }
 
         .header-nav a:hover {
-            color: #3182ce;
+            color:#ffef70;
+            text-shadow:
+            1px 1px 0 black, 
+            -1px -1px 0 black, 
+            1px -1px 0 black,
+          -1px 1px 0 black; 
         }
+            
+        
 
         /* Responsive Styles */
         @media (max-width: 768px) {
@@ -81,23 +89,539 @@
                 gap: 0.5rem;
             }
         }
+
+        /* Base styles for the main section */
+        .donate-section {
+            background-color: #000;
+            padding: var(--spacing-70);
+        }
+
+        /* Responsive spacing variables for consistency */
+        :root {
+            --spacing-70: 4.5rem;
+            --spacing-80: 6rem;
+            --spacing-40: 2rem;
+        }
+
+        /* Container for the columns, centered on the page */
+        .wp-block-columns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 960px; /* Aligns with the "wide" class */
+            margin-left: auto;
+            margin-right: auto;
+            gap: 0;
+        }
+
+        /* Styling for each column */
+        .wp-block-column {
+            flex-grow: 0;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Styling for the first and last columns (images) */
+        .wp-block-column.image-column {
+            flex-basis: 25%;
+        }
+
+        /* Styling for the middle column (text and button) */
+        .wp-block-column.content-column {
+            padding-left: var(--spacing 70);
+            padding-right: var(--spacing 70);
+            background-color:black;
+            color: #e2e8f0;
+            width: 1000px;;
+
+        }
+
+        /* Image styling for both columns, using aspect-ratio for consistency */
+        .wp-block-image {
+            width: 100%;
+            height: auto;
+        }
+        
+        .wp-block-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Specific aspect ratios for each image */
+        .image-4-3 img {
+            aspect-ratio: 4 / 3;
+        }
+
+        .image-3-4 img {
+            aspect-ratio: 3 / 4;
+        }
+        
+        /* Heading and paragraph styles */
+        .wp-block-heading {
+            text-align: center;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            color:white;
+            margin-bottom: 0.5rem;
+        }
+
+        .wp-block-paragraph {
+            text-align: center;
+            color:white;
+            font-size: 1rem;
+            max-width: 5000px;
+            
+        }
+
+        /* Buttons container and styling */
+        .wp-block-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .wp-block-button__link {
+            background-color: white;
+            color: black;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            border-radius: 9999px;
+            font-weight: 200;
+            transition: background-color 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .wp-block-button__link:hover {
+            background-color: #e2e8f0;
+        }
+
+        /* Responsive design for mobile view */
+        @media (max-width: 768px) {
+            .wp-block-columns {
+                flex-direction: column;
+                gap: var(--spacing-80);
+            }
+            
+            .wp-block-column.image-column {
+                flex-basis: auto;
+                width: 100%;
+            }
+            
+            .wp-block-column.content-column {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        #main{
+            text-decoration: underline;
+        }
+
+
+        .wp-block-columns.alignwide.are-vertically-aligned-center.is-style-default {
+    gap: var(--wp--preset--spacing--40);
+    align-items: center;
+}
+
+.wp-block-column.is-vertically-aligned-center.column-1 {
+    flex-basis: 40%;
+    gap: 20px;
+    justify-content: left;
+    margin-left: -100px;
+}
+
+.wp-block-heading.alignwide.has-xxx-large-font-size {
+    flex-basis: 100%;
+}
+
+.wp-block-buttons {
+    margin-top: 60px;
+}
+
+.wp-block-column.is-vertically-aligned-center.column-2 {
+    flex-basis: 40%;
+    gap: 60px;
+    margin-left: 100px;
+}
+
+.wp-block-columns.is-not-stacked-on-mobile {
+    gap: 0;
+}
+
+.wp-block-column.column-3 {
+    flex-basis: 30%;
+    padding-top: 7.5%;
+}
+
+.wp-block-image.size-full.has-custom-border.is-style-default.image-1 {
+    
+    border-top-left-radius:24px;
+    border-top-right-radius:24px;
+    border-bottom-left-radius:24px;
+    border-bottom-right-radius:100px;
+    aspect-ratio:2/4;
+    object-fit:cover;
+    margin-right: 90px;
+    margin-top: 100px;
+    
+}
+
+.wp-block-column.is-vertically-aligned-bottom {
+    flex-basis: 60%;
+    padding-top: 15%;
+    align-items: flex-end;
+}
+
+.wp-block-image.size-full.has-custom-border.is-style-default.image-2 {
+    border-top-left-radius:1000px;
+    border-top-right-radius:1000px;
+    border-bottom-left-radius:24px;
+    border-bottom-right-radius:24px;
+    aspect-ratio:2/4;
+    margin-left: 200px;
+    margin-top: 200px;
+
+  
+
+    
+
+   
+}
+
+.wp-block-column.column-4 {
+    flex-basis: 30%;
+}
+
+.wp-block-image.size-full.has-custom-border.is-style-default.image-3 {
+    margin-left: -50%;
+    border-radius: 1000px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.courses{
+    margin-left: -20%;
+    font-size:  50px;
+    margin-top: 50px;
+
+}
+.wparagraph{
+    margin-left: -320px;
+    margin-top: -10%;
+}
+.wparagraph1{
+    margin-left: -50px;
+    margin-top: -5%;
+    
+}
+
+.wp-block-buttons1 {
+  margin-top: 20px;
+  /* Add more spacing or alignment as needed */
+}
+
+/* The button wrapper */
+.wp-block-button1 {
+  margin-left: -220%;
+}
+
+/* The actual button link */
+.wp-block-button__link.wp-element-button1 {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color:black;
+  color: #ffffff;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: -100px;
+}
+
+/* Hover effect */
+.wp-block-button__link.wp-element-button1:hover {
+  background-color: white;
+  color: #000;
+  border-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wp-block-column-column-3{
+    margin-top: 700px;
+
+}
+
+.wp-block-pullquote {
+  padding: 2em;
+  border-left: 5px solid rgb(204, 204, 60); /* A prominent left border to visually set it apart */
+  margin: 2em 0;
+  background-color: #e2e5cf; /* A light background color */
+  font-family: 'Georgia', serif;
+}
+.wp-block-pullquote blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  
+}
+
+.wp-block-pullquote p {
+  font-size: 1.5em; /* Larger font size for the quote */
+  line-height: 1.6;
+  font-style: italic; /* Italicize the quote text */
+  margin-bottom: 0.5em;
+  color: #333;
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.wp-block-pullquote cite {
+  display: block;
+  text-align:center;
+  font-size: 1em;
+  color: #413f3f;
+  margin-top: 1em;
+}
+
+
+
+
+.page-container {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-column {
+    flex: 2;
+}
+
+.header-column h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.content-column {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder {
+    width: 100%;
+    padding-top: 100%; /* Creates a square placeholder */
+    background: linear-gradient(to top, #333, #666); /* Matches the gradient in the image */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.content-column h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.content-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.content-column button {
+    align-self: flex-start;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-column button:hover {
+    background-color: #555;
+}
+
+/* For smaller screens, the columns will stack */
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+    }
+    .header-column {
+        flex: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.img{
+    width: 337px;
+    height: 337px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5%;
+}
+
+.wp-block-column-content-column{
+    background-color: #000;
+}
+
+.site-footer {
+  text-align: left;
+  padding: 20px;
+  background-color: black; /* a light grey background */
+  border-top: 1px solid white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.designer-info {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
+
     </style>
 </head>
 <body>
+    
 
     <header class="header">
         <div class="header-left">
-            <img src="https://placehold.co/60x60/d1d5db/4a5568?text=Logo" alt="CSPC Logo" class="header-logo">
+            <img src="{{ asset('resources1/ccslogo.png') }}" alt="CCS Logo" class="header-logo">
             <a href="#" class="header-title">CSPC - College of Computer Studies</a>
         </div>
         <nav class="header-nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li id = "main"><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="donate-section">
+    <div class="wp-block-columns">
+        <div class="wp-block-column image-column">
+            <figure class="wp-block-image image-4-3">
+                <img src="{{ asset('resources1/sideimg2.jpg') }}" alt="Coding Snippet" />
+            </figure>
+        </div>
+
+        <div class="wp-block-column content-column">
+            <h1 class="wp-block-heading">CCS</h1>
+            <p class="wp-block-paragraph">College of Computer Studies: A college department in Camarines Sur Polytechnic Colleges (CSPC) that aims to produce graduates who are equipped with the competencies required for professional Information and Communications Technology</p>
+            <div class="wp-block-buttons">
+                <a class="wp-block-button__link" href="#">Explore</a>
+            </div>
+        </div>
+
+        <div class="wp-block-column image-column">
+            <figure class="wp-block-image image-3-4">
+                <img src="{{ asset('resources1/sideimg.jpg') }}" alt="Collaboration" />
+            </figure>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-default">
+  <div class="wp-block-column is-vertically-aligned-center column-1">
+    <h1 class="courses" >Programs Offered</h1>
+    <p class="wparagraph">Finding what to take?</p>
+    <p class="wparagraph1">We offer a wide range of academic programs designed to prepare students for a variety of careers in technology. Our courses provide the essential knowledge and practical skills needed to succeed in fields like software development, networking, and data management.</p>
+    <div class="wp-block-buttons1">
+      <div class="wp-block-button1">
+        <a class="wp-block-button__link wp-element-button1">View</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wp-block-column is-vertically-aligned-center column-2">
+    <div class="wp-block-columns is-not-stacked-on-mobile">
+      <div class="wp-block-column column-3">
+        <figure class="wp-block-image size-full has-custom-border is-style-default image-1">
+          <img src="{{ asset('resources1/BLIS.png') }}" alt="" class="wp-image-37" />
+        </figure>
+      </div>
+
+      <div class="wp-block-column is-vertically-aligned-bottom">
+        <figure class="wp-block-image size-full has-custom-border is-style-default image-2">
+          <img src="{{ asset('resources1/BSCS-IT.png') }}" alt="" class="wp-image-38" />
+        </figure>
+      </div>
+
+      <div class="wp-block-column column-4">
+        <figure class="wp-block-image size-full has-custom-border is-style-default image-3">
+          <img src="{{ asset('resources1/BSIS.png') }}" alt="" class="wp-image-36" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<figure class="wp-block-pullquote"><blockquote><p>Produce globally skilled, ethically upright and socially responsible computing professionals adaptable to technological and social changes, responsive to sustainable development of the region and beyond.</p><cite>CCS General Objectives</cite></blockquote></figure>
+
+
+<div class="page-container">
+    <div class="column header-column">
+        <h2>Other Pages</h2>
+    </div>
+    
+    <div class="column content-column">
+        <img class ="img" src="{{asset('resources1/img.png')}}" alt="A dark color gradient" class="column-image">
+        <h3>About Us</h3>
+        <p>Learn more about our department.</p>
+        <button>View</button>
+    </div>
+    
+    <div class="column content-column"> 
+        <img class ="img" src="{{asset('resources1/img.png')}}" alt="A dark color gradient" class="column-image">
+        <h3>Contact Us</h3>
+        <p>We are here for your sconcerns. </p>
+        <button>View</button>
+    </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p class="designer-info">Designed by Kathlyn Cris P. Ibo (BSIT 3C) - September 2025</p>
+  </div>
+</footer>
+
+
+
+
+
+
+    
+</body>
 
 </body>
 </html>
