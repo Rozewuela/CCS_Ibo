@@ -98,7 +98,7 @@
         .about-section {
     padding: 40px;
     margin: 0;
-    background-color: #EFC94C; /* A light background color */
+    background-color: #EFC94C; 
 }
 
 .about-container {
@@ -144,7 +144,7 @@
         .site-footer {
   text-align: left;
   padding: 20px;
-  background-color: black; /* a light grey background */
+  background-color: black; 
   border-top: 1px solid white;
 }
 
@@ -163,7 +163,7 @@
 .intro-section {
     margin: 0;
     padding: 40px;
-    background-color: #fff; /* A neutral background for the section */
+    background-color: #fff; 
 }
 
 .two-column-layout {
@@ -175,7 +175,7 @@
 }
 
 .column {
-    flex: 1; /* Each column takes up equal space */
+    flex: 1; 
 }
 
 .image-column {
@@ -185,7 +185,7 @@
 .intro-image-container {
     margin: 0;
     padding: 0;
-    line-height: 0; /* Removes extra space below the image */
+    line-height: 0; 
 }
 
 .intro-image {
@@ -193,15 +193,15 @@
     height: auto;
     display: block;
     object-fit: cover;
-    aspect-ratio: 3/4; /* Maintains the 3:4 aspect ratio */
+    aspect-ratio: 3/4; 
     margin-left: -20px;
   
 }
 
 .content-column {
     flex: 1;
-    padding: 30px; /* Add some padding for the content */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    padding: 30px; 
+    border-radius: 8px; 
 }
 
 .content-wrapper {
@@ -244,7 +244,7 @@
 hr.thick-line {
   border: none;
   height: 10px;
-  background-color:black; /* A vibrant blue color */
+  background-color:black;
 }
 
 /*course*/
@@ -269,7 +269,7 @@ hr.thick-line {
 }
 
 .header-column {
-    flex: 1; /* Adjusts flex-basis for header column */
+    flex: 1; 
 }
 
 .section-heading {
@@ -286,7 +286,7 @@ hr.thick-line {
 }
 
 .content-column {
-    flex: 1; /* Adjusts flex-basis for content columns */
+    flex: 1; 
     gap: 40px;
 }
 
@@ -304,7 +304,7 @@ hr.thick-line {
     width: 100%;
     height: auto;
     object-fit: cover;
-    aspect-ratio: 1; /* Creates a square image */
+    aspect-ratio: 1; 
 }
 
 .program-title {
@@ -346,14 +346,14 @@ hr.thick-line {
 <body>
      <header class="header">
         <div class="header-left">
-            <img src="sources/ccslogo.png" alt="CCS Logo" class="header-logo">
+            <img src="{{ asset('resources1/ccslogo.png') }}" alt="CCS Logo" class="header-logo">
             <a href="#" class="header-title">CSPC - College of Computer Studies</a>
         </div>
         <nav class="header-nav">
             <ul>
-                <li ><a href="#">Home</a></li>
+                <li ><a href="/home">Home</a></li>
                 <li id = "main"><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -378,11 +378,11 @@ hr.thick-line {
         <!-- Column 1: Image -->
         <div class="column image-column">
             <figure class="intro-image-container">
-                <img src="sources/bgcspc.png" alt="CSPC Mission Background" class="intro-image" title="title"/>
+                <img src="{{ asset('resources1/bgcspc.png') }}" alt="CSPC Mission Background" class="intro-image" title="title"/>
             </figure>
         </div>
 
-        <!-- Column 2: Content with Yellow Background -->
+        <!-- Column 2:  -->
         <div class="column content-column">
             <div class="content-wrapper">
                 <h2 class="content-heading">CSPC Mission</h2>
@@ -390,7 +390,7 @@ hr.thick-line {
             </div>
         </div>
 
-         <!-- Column 2: Content with Yellow Background -->
+         <!-- Column 2 -->
         <div class="column content-column">
             <div class="content-wrapper">
                 <h2 class="content-heading">CSPC Vision</h2>
@@ -417,7 +417,7 @@ hr.thick-line {
         <div class="column content-column">
             <div class="program-item">
                 <div class="item-image-container">
-                    <img src="https://ccs52.wordpress.com/wp-content/uploads/2025/09/itpic-1.jpg?w=683" alt="" class="program-image" />
+                    <img src="{{ asset('resources1/ITpic.jpg') }}" alt="" class="program-image" />
                 </div>
                 <div class="item-details">
                     <h3 class="program-title">BSIT</h3>
@@ -432,7 +432,7 @@ hr.thick-line {
             </div>
             <div class="program-item">
                 <div class="item-image-container">
-                    <img src="https://ccs52.wordpress.com/wp-content/uploads/2025/09/ispic-1.jpg?w=736" alt="" class="program-image" />
+                    <img src="{{ asset('resources1/ISpic.jpg') }}" alt="" class="program-image" />
                 </div>
                 <div class="item-details">
                     <h3 class="program-title">BSIS</h3>
@@ -445,7 +445,7 @@ hr.thick-line {
         <div class="column content-column">
             <div class="program-item">
                 <div class="item-image-container">
-                    <img src="https://ccs52.wordpress.com/wp-content/uploads/2025/09/cspic-1.jpg?w=579" alt="" class="program-image" />
+                    <img src="{{ asset('resources1/CSpic.jpg') }}" alt="" class="program-image" />
                 </div>
                 <div class="item-details">
                     <h3 class="program-title">BSCS</h3>
@@ -455,7 +455,7 @@ hr.thick-line {
             </div>
             <div class="program-item">
                 <div class="item-image-container">
-                    <img src="https://ccs52.wordpress.com/wp-content/uploads/2025/09/lispic-1.jpg?w=640" alt="" class="program-image" />
+                    <img src="{{ asset('resources1/LISpic.jpg') }}" alt="" class="program-image" />
                 </div>
                 <div class="item-details">
                     <h3 class="program-title">BLIS</h3>

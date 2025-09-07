@@ -140,7 +140,7 @@
 
         }
 
-        /* Image styling for both columns, using aspect-ratio for consistency */
+        /* Image styling for both columns */
         .wp-block-image {
             width: 100%;
             height: auto;
@@ -153,7 +153,7 @@
             display: block;
         }
 
-        /* Specific aspect ratios for each image */
+        
         .image-4-3 img {
             aspect-ratio: 4 / 3;
         }
@@ -217,40 +217,41 @@
                 padding-right: 0;
             }
         }
+
         #main{
-            text-decoration: underline;
+         text-decoration: underline;
         }
 
 
         .wp-block-columns.alignwide.are-vertically-aligned-center.is-style-default {
-    gap: var(--wp--preset--spacing--40);
-    align-items: center;
-}
+         gap: var(--wp--preset--spacing--40);
+         align-items: center;
+        }
 
-.wp-block-column.is-vertically-aligned-center.column-1 {
-    flex-basis: 40%;
-    gap: 20px;
-    justify-content: left;
-    margin-left: -100px;
-}
+        .wp-block-column.is-vertically-aligned-center.column-1 {
+        flex-basis: 40%;
+        gap: 20px;
+        justify-content: left;
+        margin-left: -100px;
+        }
 
-.wp-block-heading.alignwide.has-xxx-large-font-size {
-    flex-basis: 100%;
-}
+        .wp-block-heading.alignwide.has-xxx-large-font-size {
+         flex-basis: 100%;
+        }
 
-.wp-block-buttons {
-    margin-top: 60px;
-}
+       .wp-block-buttons {
+         margin-top: 60px;
+        }
 
-.wp-block-column.is-vertically-aligned-center.column-2 {
-    flex-basis: 40%;
-    gap: 60px;
-    margin-left: 100px;
-}
+       .wp-block-column.is-vertically-aligned-center.column-2 {
+         flex-basis: 40%;
+         gap: 60px;
+         margin-left: 100px;
+        }
 
-.wp-block-columns.is-not-stacked-on-mobile {
-    gap: 0;
-}
+        .wp-block-columns.is-not-stacked-on-mobile {
+         gap: 0;
+         }
 
 .wp-block-column.column-3 {
     flex-basis: 30%;
@@ -518,8 +519,8 @@
         <nav class="header-nav">
             <ul>
                 <li id = "main"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
