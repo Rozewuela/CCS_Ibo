@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+@extends('layouts.app')
 
-    
-    <link rel="stylesheet" href="{{asset('css/about.css')}}">
-</head>
-<body>
+@section('title','About Page')
+
+
+   
+
+@section('content')
      <header class="header">
         <div class="header-left">
             <img src="{{ asset('resources1/ccslogo.png') }}" alt="CCS Logo" class="header-logo">
@@ -139,5 +136,4 @@
   </div>
 </footer>
     
-</body>
-</html>
+@endsection
