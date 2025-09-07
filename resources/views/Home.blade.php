@@ -94,16 +94,16 @@
     
     <div class="column content-column">
         <img class ="img" src="{{asset('resources1/img.png')}}" alt="A dark color gradient" class="column-image">
-        <h3>About Us</h3>
-        <p>Learn more about our department.</p>
-        <button>View</button>
+        <h3 class ="space">About Us</h3>
+        <p class ="space">Learn more about our department.</p>
+        <button class ="space"  >View</button>
     </div>
     
     <div class="column content-column"> 
         <img class ="img" src="{{asset('resources1/img.png')}}" alt="A dark color gradient" class="column-image">
-        <h3>Contact Us</h3>
-        <p>We are here for your sconcerns. </p>
-        <button>View</button>
+        <h3 class ="space">Contact Us</h3>
+        <p class ="space"> We are here for your sconcerns. </p>
+        <button class ="space">>View</button>
     </div>
 </div>
 
